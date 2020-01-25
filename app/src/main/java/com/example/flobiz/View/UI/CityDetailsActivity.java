@@ -63,10 +63,10 @@ public class CityDetailsActivity extends AppCompatActivity {
             @Override
             public void onChanged(WeatherResponse weatherResponse) {
                 Log.d("Changed","Data Changed");
-                cityTempMax.setText("Max Temperature: "+String.valueOf(weatherResponse.main.temp_max));
-                cityTempMin.setText("Min Temperature: "+String.valueOf(weatherResponse.main.temp_min));
-                cityHumidity.setText("Humidity: "+String.valueOf(weatherResponse.main.humidity));
-                cityWindSpeed.setText("Wind Speed: "+String.valueOf(weatherResponse.wind.speed));
+                cityTempMax.setText("Max Temperature: "+ String.format ("%.02f",weatherResponse.main.temp_max - 273.15) + " C");
+                cityTempMin.setText("Min Temperature: "+String.format ("%.02f",weatherResponse.main.temp_min - 273.15) + " C");
+                cityHumidity.setText("Humidity: "+(weatherResponse.main.humidity));
+                cityWindSpeed.setText("Wind Speed: "+(weatherResponse.wind.speed));
             }
         });
     }
