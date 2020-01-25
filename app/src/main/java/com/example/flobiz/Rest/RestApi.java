@@ -1,6 +1,5 @@
 package com.example.flobiz.Rest;
 
-import com.example.flobiz.Model.City;
 import com.example.flobiz.Model.CityList;
 import com.example.flobiz.Model.WeatherResponse;
 

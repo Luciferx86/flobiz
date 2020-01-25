@@ -32,12 +32,8 @@ public class CityDetailsActivity extends AppCompatActivity {
 
     Button goBack;
 
-
-    String AppId;
-
     String city;
 
-    String BaseUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
